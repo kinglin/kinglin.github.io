@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[测试标题]]></title>
+    <url>%2F2019%2F08%2F13%2F%E6%B5%8B%E8%AF%95%E6%A0%87%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[安装过程：https://segmentfault.com/a/1190000017986794 http://huanyouchen.github.io/2018/05/30/hexo-support-jupyter-notebook-in-blog/ https://hexo.io/zh-cn/docs/ npm install -g hexo-cli （事先安装好 node 与 git 环境） hexo init myBlogcd myBlognpm install npm install hexo-deployer-git –save hexo s （本地） 配置 github\n hexo g -d （推到 github） 配置 picgo 静态 github 图床 添加 jupyter 代码段 npm install hexo-jupyter-notebook –save brew install pandoc pip install nbconvert _config.yml –&gt; post_asset_folder: true 在写文章的_posts 目录下面创建 jupyter-demo 文件夹专门存放用于展示在博客文章中的 ipynb 文件: mkdir jupyter-demo 加入代码段 12&lt;script src=&quot;http://code.jquery.com/jquery-2.0.0.js&quot;&gt;&lt;/script&gt;&#123;% asset_jupyter /anaconda3/bin/python ../jupyter/ForHexo.ipynb %&#125; 测试代码1print(&quot;helloworld&quot;) 普通文字 代码释义 测试 jupyter $("#ipynb").load(function() {console.log($("#ipynb").contents().find("body").find("#notebook")); document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook").height()+100;}) 测试视频 测试公式$$x_{balabala}^{bala}$$ $$\frac{1}{1+\frac{1}{2}}$$ 公式换图片显示 on https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn 测试更换主题 在博客根目录：git clone https://github.com/theme-next/hexo-theme-next themes/next 修改 hexo/_config.yml 中 theme: next 中英文加空格npm install hexo-filter-auto-spacing –save 可在根目录 package.json 找到 denpendency:”hexo-filter-auto-spacing”: “^0.2.1” 添加搜索npm install hexo-generator-searchdb –save 安装完成，编辑博客配置文件：_config.yml 12345search: path: search.xml field: post format: html limit: 10000 Next 主题自带搜索设置，编辑主题配置文件：_config.yml 找到文件中 Local search 的相关配置，设为 true]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F08%2F12%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
