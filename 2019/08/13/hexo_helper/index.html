@@ -68,7 +68,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818230209.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818122551.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/CodeCogsEqn.png">
-<meta property="og:updated_time" content="2019-08-18T15:08:25.212Z">
+<meta property="og:updated_time" content="2019-08-18T15:47:56.147Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Installation and Configuration (with NexT theme)">
 <meta name="twitter:description" content="Installation Process： Install hexo （node and git need to be installed previously）  npm install -g hexo-cli  Create local blog folder  hexo init myBlogcd myBlognpm install  Install hexo developer git n">
@@ -323,7 +323,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-08-18 23:08:25" itemprop="dateModified" datetime="2019-08-18T23:08:25+08:00">2019-08-18</time>
+                <time title="Modified: 2019-08-18 23:47:56" itemprop="dateModified" datetime="2019-08-18T23:47:56+08:00">2019-08-18</time>
               </span>
             
           
@@ -343,23 +343,19 @@
   </span>
   
   
-          <br>
+          
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              
-              <span>1k</span>
+              <span>982</span>
             </span>
           
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">Reading time &asymp;</span>
               
               <span>1 mins.</span>
             </span>
@@ -399,7 +395,7 @@
 <li><p><code>hexo new &quot;My New Post&quot;</code></p>
 </li>
 </ol>
-<h1 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h1><h2 id="Image-Uploader"><a href="#Image-Uploader" class="headerlink" title="Image Uploader"></a>Image Uploader</h2><p>Prepare an online image uploader like Picgo, and follow the instructions here <a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener">https://github.com/Molunerfinn/PicGo</a></p>
+<h1 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h1><h2 id="Image-Uploader"><a href="#Image-Uploader" class="headerlink" title="Image Uploader"></a>Image Uploader</h2><p>Prepare an online image uploader like Picgo, and follow the <a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener">instructions</a></p>
 <h2 id="Jupyter-Code-Block-Support"><a href="#Jupyter-Code-Block-Support" class="headerlink" title="Jupyter Code Block Support"></a>Jupyter Code Block Support</h2><h3 id="Embed-Local-File"><a href="#Embed-Local-File" class="headerlink" title="Embed Local File"></a>Embed Local File</h3><ol>
 <li><p>npm install hexo-jupyter-notebook –save`</p>
 </li>
@@ -8845,7 +8841,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 <iframe src="https://nbviewer.jupyter.org/github/kinglin/YTClip/blob/master/02_Code/01_Scripts/rename_addprefix.ipynb" width="700" height="500"></iframe>
 
 <h2 id="Change-Theme"><a href="#Change-Theme" class="headerlink" title="Change Theme"></a>Change Theme</h2><ol>
-<li><p>Themes repository: <a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></p>
+<li><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">Themes repository</a></p>
 </li>
 <li><p>Go to the root folder of your blog</p>
 <p><code>git clone https://github.com/theme-next/hexo-theme-next themes/next</code></p>
@@ -8877,7 +8873,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 <h2 id="Add-Feedback-Valine"><a href="#Add-Feedback-Valine" class="headerlink" title="Add Feedback (Valine)"></a>Add Feedback (Valine)</h2><ol>
 <li><p>Update <code>_config.yml</code> in theme <em>next</em> –&gt; enable valine</p>
 </li>
-<li><p>Login or register on LeanCloud (<a href="https://leancloud.cn/" target="_blank" rel="noopener">https://leancloud.cn</a>), then replace the appid and appkey to <code>_config.yml</code></p>
+<li><p>Login or register on <a href="[https://leancloud.cn](https://leancloud.cn/)">LeanCloud</a>, then replace the appid and appkey to <code>_config.yml</code></p>
 <p><img src="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818224755.png" alt></p>
 </li>
 </ol>
@@ -8889,6 +8885,16 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 </li>
 <li><p>Enable field <code>symbols_count_time</code> in NexT <code>_config.yml</code></p>
 <p><img src="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818230209.png" alt></p>
+</li>
+</ol>
+<h2 id="Add-Google-Analytics"><a href="#Add-Google-Analytics" class="headerlink" title="Add Google Analytics"></a>Add Google Analytics</h2><ol>
+<li><p>Register on <a href="[https://analytics.google.com](https://analytics.google.com/)">Google Analytics</a></p>
+</li>
+<li><p>Apply a new account for your website and you will get an <code>tracking_id</code> like <code>UA-14xxxx949-1</code></p>
+</li>
+<li><p>Update NexT  <code>_config.yml</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">google_analytics:</span><br><span class="line">  tracking_id: UA-14xxxx949-1 </span><br><span class="line">  localhost_ignored: true</span><br></pre></td></tr></table></figure>
+
 </li>
 </ol>
 <h1 id="Block-Testing"><a href="#Block-Testing" class="headerlink" title="Block Testing"></a>Block Testing</h1><h2 id="Code-Block"><a href="#Code-Block" class="headerlink" title="Code Block"></a>Code Block</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"helloworld"</span>)</span><br></pre></td></tr></table></figure>
@@ -17443,7 +17449,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Installation-Process："><span class="nav-number">1.</span> <span class="nav-text">Installation Process：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Configuration"><span class="nav-number">2.</span> <span class="nav-text">Configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Image-Uploader"><span class="nav-number">2.1.</span> <span class="nav-text">Image Uploader</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jupyter-Code-Block-Support"><span class="nav-number">2.2.</span> <span class="nav-text">Jupyter Code Block Support</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Local-File"><span class="nav-number">2.2.1.</span> <span class="nav-text">Embed Local File</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Online-File"><span class="nav-number">2.2.2.</span> <span class="nav-text">Embed Online File</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Change-Theme"><span class="nav-number">2.3.</span> <span class="nav-text">Change Theme</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Space-between-Chinese-character-and-English-words-Automately"><span class="nav-number">2.4.</span> <span class="nav-text">Add Space between Chinese character and English words Automately</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Search-Feature"><span class="nav-number">2.5.</span> <span class="nav-text">Add Search Feature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Attach-Custom-Domain"><span class="nav-number">2.6.</span> <span class="nav-text">Attach Custom Domain</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Feedback-Valine"><span class="nav-number">2.7.</span> <span class="nav-text">Add Feedback (Valine)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Word-Count-amp-Estimate-Reading-Time"><span class="nav-number">2.8.</span> <span class="nav-text">Add Word Count &amp; Estimate Reading Time</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Block-Testing"><span class="nav-number">3.</span> <span class="nav-text">Block Testing</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Code-Block"><span class="nav-number">3.1.</span> <span class="nav-text">Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Image-Upload"><span class="nav-number">3.2.</span> <span class="nav-text">Test Image Upload</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Jupyter-Code-Block"><span class="nav-number">3.3.</span> <span class="nav-text">Test Jupyter Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Video-Embedded"><span class="nav-number">3.4.</span> <span class="nav-text">Test Video Embedded</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Formula"><span class="nav-number">3.5.</span> <span class="nav-text">Test Formula</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Installation-Process："><span class="nav-number">1.</span> <span class="nav-text">Installation Process：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Configuration"><span class="nav-number">2.</span> <span class="nav-text">Configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Image-Uploader"><span class="nav-number">2.1.</span> <span class="nav-text">Image Uploader</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jupyter-Code-Block-Support"><span class="nav-number">2.2.</span> <span class="nav-text">Jupyter Code Block Support</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Local-File"><span class="nav-number">2.2.1.</span> <span class="nav-text">Embed Local File</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Online-File"><span class="nav-number">2.2.2.</span> <span class="nav-text">Embed Online File</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Change-Theme"><span class="nav-number">2.3.</span> <span class="nav-text">Change Theme</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Space-between-Chinese-character-and-English-words-Automately"><span class="nav-number">2.4.</span> <span class="nav-text">Add Space between Chinese character and English words Automately</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Search-Feature"><span class="nav-number">2.5.</span> <span class="nav-text">Add Search Feature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Attach-Custom-Domain"><span class="nav-number">2.6.</span> <span class="nav-text">Attach Custom Domain</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Feedback-Valine"><span class="nav-number">2.7.</span> <span class="nav-text">Add Feedback (Valine)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Word-Count-amp-Estimate-Reading-Time"><span class="nav-number">2.8.</span> <span class="nav-text">Add Word Count &amp; Estimate Reading Time</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Google-Analytics"><span class="nav-number">2.9.</span> <span class="nav-text">Add Google Analytics</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Block-Testing"><span class="nav-number">3.</span> <span class="nav-text">Block Testing</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Code-Block"><span class="nav-number">3.1.</span> <span class="nav-text">Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Image-Upload"><span class="nav-number">3.2.</span> <span class="nav-text">Test Image Upload</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Jupyter-Code-Block"><span class="nav-number">3.3.</span> <span class="nav-text">Test Jupyter Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Video-Embedded"><span class="nav-number">3.4.</span> <span class="nav-text">Test Video Embedded</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Formula"><span class="nav-number">3.5.</span> <span class="nav-text">Test Formula</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
             
 
           </div>
@@ -17470,16 +17476,12 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-      <span class="post-meta-item-text">Symbols count total: </span>
-    
-    <span title="Symbols count total">NaNm</span>
+    <span title="Symbols count total">1k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-      <span class="post-meta-item-text">Reading time total &asymp;</span>
-    
-    <span title="Reading time total">NaN:aN</span>
+    <span title="Reading time total">1 mins.</span>
 </div>
 
         
