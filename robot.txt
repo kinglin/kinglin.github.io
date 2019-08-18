@@ -11,5 +11,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://leisurelyfool.com/sitemap.xml
-Sitemap: http://leisurelyfool.com/baidusitemap.xml
+Sitemap: https://leisurelyfool.com/sitemap.xml
+Sitemap: https://leisurelyfool.com/baidusitemap.xml
