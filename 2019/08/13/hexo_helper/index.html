@@ -65,9 +65,10 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818223659.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818224328.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818224755.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818230209.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818122551.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/CodeCogsEqn.png">
-<meta property="og:updated_time" content="2019-08-18T14:48:33.424Z">
+<meta property="og:updated_time" content="2019-08-18T15:08:25.212Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Installation and Configuration (with NexT theme)">
 <meta name="twitter:description" content="Installation Process： Install hexo （node and git need to be installed previously）  npm install -g hexo-cli  Create local blog folder  hexo init myBlogcd myBlognpm install  Install hexo developer git n">
@@ -312,11 +313,19 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-08-18 22:48:33" itemprop="dateModified" datetime="2019-08-18T22:48:33+08:00">2019-08-18</time>
+                <time title="Modified: 2019-08-18 23:08:25" itemprop="dateModified" datetime="2019-08-18T23:08:25+08:00">2019-08-18</time>
               </span>
             
           
 
+          
+            <span id="/2019/08/13/hexo_helper/" class="post-meta-item leancloud_visitors" data-flag-title="Hexo Installation and Configuration (with NexT theme)" title="Views">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
           
   
   <span class="post-meta-item">
@@ -8870,6 +8879,16 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 <p><img src="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818224755.png" alt></p>
 </li>
 </ol>
+<h2 id="Add-Word-Count-amp-Estimate-Reading-Time"><a href="#Add-Word-Count-amp-Estimate-Reading-Time" class="headerlink" title="Add Word Count &amp; Estimate Reading Time"></a>Add Word Count &amp; Estimate Reading Time</h2><ol>
+<li><p><code>npm install hexo-symbols-count-time --save</code></p>
+</li>
+<li><p>Add following code block to hexo <code>_config.yml</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">symbols: true</span><br><span class="line">  time: true</span><br><span class="line">  total_symbols: true</span><br><span class="line">  total_time: true</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Enable field <code>symbols_count_time</code> in NexT <code>_config.yml</code></p>
+<p><img src="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818230209.png" alt></p>
+</li>
+</ol>
 <h1 id="Block-Testing"><a href="#Block-Testing" class="headerlink" title="Block Testing"></a>Block Testing</h1><h2 id="Code-Block"><a href="#Code-Block" class="headerlink" title="Code Block"></a>Code Block</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"helloworld"</span>)</span><br></pre></td></tr></table></figure>
 
 <p>This is the explaination of the code block.</p>
@@ -17294,6 +17313,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 <p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></p>
 <p><a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener">https://github.com/Molunerfinn/PicGo</a></p>
 <p><a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">https://www.jianshu.com/p/191d1e21f7ed</a></p>
+<p><a href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener">https://fontawesome.com/v4.7.0/icons/</a></p>
 
     </div>
 
@@ -17421,7 +17441,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Installation-Process："><span class="nav-number">1.</span> <span class="nav-text">Installation Process：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Configuration"><span class="nav-number">2.</span> <span class="nav-text">Configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Image-Uploader"><span class="nav-number">2.1.</span> <span class="nav-text">Image Uploader</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jupyter-Code-Block-Support"><span class="nav-number">2.2.</span> <span class="nav-text">Jupyter Code Block Support</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Local-File"><span class="nav-number">2.2.1.</span> <span class="nav-text">Embed Local File</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Online-File"><span class="nav-number">2.2.2.</span> <span class="nav-text">Embed Online File</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Change-Theme"><span class="nav-number">2.3.</span> <span class="nav-text">Change Theme</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Space-between-Chinese-character-and-English-words-Automately"><span class="nav-number">2.4.</span> <span class="nav-text">Add Space between Chinese character and English words Automately</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Search-Feature"><span class="nav-number">2.5.</span> <span class="nav-text">Add Search Feature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Attach-Custom-Domain"><span class="nav-number">2.6.</span> <span class="nav-text">Attach Custom Domain</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Feedback-Valine"><span class="nav-number">2.7.</span> <span class="nav-text">Add Feedback (Valine)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Block-Testing"><span class="nav-number">3.</span> <span class="nav-text">Block Testing</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Code-Block"><span class="nav-number">3.1.</span> <span class="nav-text">Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Image-Upload"><span class="nav-number">3.2.</span> <span class="nav-text">Test Image Upload</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Jupyter-Code-Block"><span class="nav-number">3.3.</span> <span class="nav-text">Test Jupyter Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Video-Embedded"><span class="nav-number">3.4.</span> <span class="nav-text">Test Video Embedded</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Formula"><span class="nav-number">3.5.</span> <span class="nav-text">Test Formula</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Installation-Process："><span class="nav-number">1.</span> <span class="nav-text">Installation Process：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Configuration"><span class="nav-number">2.</span> <span class="nav-text">Configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Image-Uploader"><span class="nav-number">2.1.</span> <span class="nav-text">Image Uploader</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jupyter-Code-Block-Support"><span class="nav-number">2.2.</span> <span class="nav-text">Jupyter Code Block Support</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Local-File"><span class="nav-number">2.2.1.</span> <span class="nav-text">Embed Local File</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Online-File"><span class="nav-number">2.2.2.</span> <span class="nav-text">Embed Online File</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Change-Theme"><span class="nav-number">2.3.</span> <span class="nav-text">Change Theme</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Space-between-Chinese-character-and-English-words-Automately"><span class="nav-number">2.4.</span> <span class="nav-text">Add Space between Chinese character and English words Automately</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Search-Feature"><span class="nav-number">2.5.</span> <span class="nav-text">Add Search Feature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Attach-Custom-Domain"><span class="nav-number">2.6.</span> <span class="nav-text">Attach Custom Domain</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Feedback-Valine"><span class="nav-number">2.7.</span> <span class="nav-text">Add Feedback (Valine)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Word-Count-amp-Estimate-Reading-Time"><span class="nav-number">2.8.</span> <span class="nav-text">Add Word Count &amp; Estimate Reading Time</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Block-Testing"><span class="nav-number">3.</span> <span class="nav-text">Block Testing</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Code-Block"><span class="nav-number">3.1.</span> <span class="nav-text">Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Image-Upload"><span class="nav-number">3.2.</span> <span class="nav-text">Test Image Upload</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Jupyter-Code-Block"><span class="nav-number">3.3.</span> <span class="nav-text">Test Jupyter Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Video-Embedded"><span class="nav-number">3.4.</span> <span class="nav-text">Test Video Embedded</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Formula"><span class="nav-number">3.5.</span> <span class="nav-text">Test Formula</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
             
 
           </div>
@@ -17503,6 +17523,100 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 
 
 
+  
+  <script>
+  function leancloudSelector(url) {
+    return document.getElementById(url).querySelector('.leancloud-visitors-count');
+  }
+  if (CONFIG.page.isPost) {
+    function addCount(Counter) {
+      var visitors = document.querySelector('.leancloud_visitors');
+      var url = visitors.getAttribute('id').trim();
+      var title = visitors.getAttribute('data-flag-title').trim();
+
+      Counter('get', `/classes/Counter?where=${JSON.stringify({ url })}`)
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            var counter = results[0];
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .then(response => response.json())
+              .then(() => {
+                leancloudSelector(url).innerText = counter.time + 1;
+              })
+            
+              .catch(error => {
+                console.log('Failed to save visitor count', error);
+              })
+          } else {
+              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .catch(error => {
+          console.log('LeanCloud Counter Error', error);
+        });
+    }
+  } else {
+    function showTime(Counter) {
+      var visitors = document.querySelectorAll('.leancloud_visitors');
+      var entries = [...visitors].map(element => {
+        return element.getAttribute('id').trim();
+      });
+
+      Counter('get', `/classes/Counter?where=${JSON.stringify({ url: { '$in': entries } })}`)
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length === 0) {
+            document.querySelectorAll('.leancloud_visitors .leancloud-visitors-count').forEach(element => {
+              element.innerText = 0;
+            });
+            return;
+          }
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.url;
+            var time = item.time;
+            leancloudSelector(url).innerText = time;
+          }
+          for (var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = leancloudSelector(url);
+            if (element.innerText == '') {
+              element.innerText = 0;
+            }
+          }
+        })
+        .catch(error => {
+          console.log('LeanCloud Counter Error', error);
+        });
+    }
+  }
+
+  fetch('https://app-router.leancloud.cn/2/route?appId=HhFuUBHEHfOPiYJYiNUeE3Nu-gzGzoHsz')
+    .then(response => response.json())
+    .then(({ api_server }) => {
+      var Counter = (method, url, data) => {
+        return fetch(`https://${api_server}/1.1${url}`, {
+          method: method,
+          headers: {
+            'X-LC-Id': 'HhFuUBHEHfOPiYJYiNUeE3Nu-gzGzoHsz',
+            'X-LC-Key': 'XG8jsPGI4UQvRxbuvEwwYkzu',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        const localhost = /http:\/\/(localhost|127.0.0.1|0.0.0.0)/;
+        if (localhost.test(document.URL)) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
 
 
 
