@@ -11,10 +11,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.3.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.3.0">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.3.0">
-  <link rel="mask-icon" href="/images/logo.svg?v=7.3.0" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo_ring.png?v=7.3.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo_ring32.png?v=7.3.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo_ring16.png?v=7.3.0">
+  <link rel="mask-icon" href="/images/logo_ring.svg?v=7.3.0" color="#222">
 
 <link rel="stylesheet" href="/css/main.css?v=7.3.0">
 
@@ -30,9 +30,9 @@
     version: '7.3.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     save_scroll: false,
-    copycode: {"enable":false,"show_result":false,"style":null},
+    copycode: {"enable":true,"show_result":true,"style":null},
     fancybox: false,
     mediumzoom: false,
     lazyload: false,
@@ -59,16 +59,17 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo Installation and Configuration (with NexT theme)">
 <meta property="og:url" content="http://yoursite.com/2019/08/13/Hexo Helper/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Leisurely Fool">
 <meta property="og:description" content="Installation Process： Install hexo （node and git need to be installed previously）  npm install -g hexo-cli  Create local blog folder  hexo init myBlogcd myBlognpm install  Install hexo developer git n">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818223659.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818122551.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/CodeCogsEqn.png">
-<meta property="og:updated_time" content="2019-08-18T08:08:45.274Z">
+<meta property="og:updated_time" content="2019-08-18T14:40:18.879Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Installation and Configuration (with NexT theme)">
 <meta name="twitter:description" content="Installation Process： Install hexo （node and git need to be installed previously）  npm install -g hexo-cli  Create local blog folder  hexo init myBlogcd myBlognpm install  Install hexo developer git n">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818122551.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818223659.png">
   <link rel="canonical" href="http://yoursite.com/2019/08/13/Hexo Helper/">
 
 
@@ -83,7 +84,7 @@
   };
 </script>
 
-  <title>Hexo Installation and Configuration (with NexT theme) | Hexo</title>
+  <title>Hexo Installation and Configuration (with NexT theme) | Leisurely Fool</title>
   
 
 
@@ -132,10 +133,12 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Leisurely Fool</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+        <p class="site-subtitle">A leisurely fool float in the ocean</p>
+      
   </div>
 
   <div class="site-nav-toggle">
@@ -272,12 +275,12 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lin Ce">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Major in Application of ML and DL">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Leisurely Fool">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">Hexo Installation and Configuration (with NexT theme)
@@ -307,12 +310,26 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-08-18 16:08:45" itemprop="dateModified" datetime="2019-08-18T16:08:45+08:00">2019-08-18</time>
+                <time title="Modified: 2019-08-18 22:40:18" itemprop="dateModified" datetime="2019-08-18T22:40:18+08:00">2019-08-18</time>
               </span>
             
           
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2019/08/13/Hexo Helper/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/08/13/Hexo Helper/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -8811,6 +8828,17 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 <p>Update <em>_config.yml</em> in NexT folder</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
 
+<h2 id="Attach-Custom-Domain"><a href="#Attach-Custom-Domain" class="headerlink" title="Attach Custom Domain"></a>Attach Custom Domain</h2><ol>
+<li><p>Buy one at <em>aliyun.com</em> or <em>godaddy.com</em> or any websites that provide the services. </p>
+</li>
+<li><p>Take <em>aliyun.com</em> as example, we need to resolve the domain and add 2 records. </p>
+<p><img src="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818223659.png" alt></p>
+</li>
+<li><p>Go to your github page settings and attach the customized domain.</p>
+</li>
+<li><p>Go to hexo <code>source</code> folder and add a new file named <code>CNAME</code>, fill in the domain. (To avoid being wiped out when submit changes to github)</p>
+</li>
+</ol>
 <h1 id="Block-Testing"><a href="#Block-Testing" class="headerlink" title="Block Testing"></a>Block Testing</h1><h2 id="Code-Block"><a href="#Code-Block" class="headerlink" title="Code Block"></a>Code Block</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"helloworld"</span>)</span><br></pre></td></tr></table></figure>
 
 <p>This is the explaination of the code block.</p>
@@ -17277,6 +17305,9 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 
           </div>
           
+    
+    <div class="comments" id="comments"></div>
+  
 
         </div>
           
@@ -17306,7 +17337,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Lin Ce</p>
-  <div class="site-description motion-element" itemprop="description"></div>
+  <div class="site-description motion-element" itemprop="description">Major in Application of ML and DL</div>
 </div>
   <nav class="site-state motion-element">
       <div class="site-state-item site-state-posts">
@@ -17339,7 +17370,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
       
         
       
-        <a href="mailto:kinglin255@gmail.com" title="E-Mail &rarr; mailto:kinglin255@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:leisurelyfool@gmail.com" title="E-Mail &rarr; mailto:leisurelyfool@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
     
   </div>
@@ -17359,7 +17390,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Installation-Process："><span class="nav-number">1.</span> <span class="nav-text">Installation Process：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Configuration"><span class="nav-number">2.</span> <span class="nav-text">Configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Image-Uploader"><span class="nav-number">2.1.</span> <span class="nav-text">Image Uploader</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jupyter-Code-Block-Support"><span class="nav-number">2.2.</span> <span class="nav-text">Jupyter Code Block Support</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Local-File"><span class="nav-number">2.2.1.</span> <span class="nav-text">Embed Local File</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Online-File"><span class="nav-number">2.2.2.</span> <span class="nav-text">Embed Online File</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Change-Theme"><span class="nav-number">2.3.</span> <span class="nav-text">Change Theme</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Space-between-Chinese-character-and-English-words-Automately"><span class="nav-number">2.4.</span> <span class="nav-text">Add Space between Chinese character and English words Automately</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Search-Feature"><span class="nav-number">2.5.</span> <span class="nav-text">Add Search Feature</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Block-Testing"><span class="nav-number">3.</span> <span class="nav-text">Block Testing</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Code-Block"><span class="nav-number">3.1.</span> <span class="nav-text">Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Image-Upload"><span class="nav-number">3.2.</span> <span class="nav-text">Test Image Upload</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Jupyter-Code-Block"><span class="nav-number">3.3.</span> <span class="nav-text">Test Jupyter Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Video-Embedded"><span class="nav-number">3.4.</span> <span class="nav-text">Test Video Embedded</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Formula"><span class="nav-number">3.5.</span> <span class="nav-text">Test Formula</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Installation-Process："><span class="nav-number">1.</span> <span class="nav-text">Installation Process：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Configuration"><span class="nav-number">2.</span> <span class="nav-text">Configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Image-Uploader"><span class="nav-number">2.1.</span> <span class="nav-text">Image Uploader</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jupyter-Code-Block-Support"><span class="nav-number">2.2.</span> <span class="nav-text">Jupyter Code Block Support</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Local-File"><span class="nav-number">2.2.1.</span> <span class="nav-text">Embed Local File</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Online-File"><span class="nav-number">2.2.2.</span> <span class="nav-text">Embed Online File</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Change-Theme"><span class="nav-number">2.3.</span> <span class="nav-text">Change Theme</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Space-between-Chinese-character-and-English-words-Automately"><span class="nav-number">2.4.</span> <span class="nav-text">Add Space between Chinese character and English words Automately</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Search-Feature"><span class="nav-number">2.5.</span> <span class="nav-text">Add Search Feature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Attach-Custom-Domain"><span class="nav-number">2.6.</span> <span class="nav-text">Attach Custom Domain</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Block-Testing"><span class="nav-number">3.</span> <span class="nav-text">Block Testing</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Code-Block"><span class="nav-number">3.1.</span> <span class="nav-text">Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Image-Upload"><span class="nav-number">3.2.</span> <span class="nav-text">Test Image Upload</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Jupyter-Code-Block"><span class="nav-number">3.3.</span> <span class="nav-text">Test Jupyter Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Video-Embedded"><span class="nav-number">3.4.</span> <span class="nav-text">Test Video Embedded</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Formula"><span class="nav-number">3.5.</span> <span class="nav-text">Test Formula</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
             
 
           </div>
@@ -17398,6 +17429,8 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
     </footer>
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+          <span id="scrollpercent"><span>0</span>%</span>
+        
       </div>
 
     
@@ -17460,6 +17493,31 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
   
   <script src="/js/scrollspy.js?v=7.3.0"></script><script src="/js/post-details.js?v=7.3.0"></script>
 
+
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail';
+  guest = guest.split(',').filter(item => {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: true,
+    appId: 'HhFuUBHEHfOPiYJYiNUeE3Nu-gzGzoHsz',
+    appKey: 'XG8jsPGI4UQvRxbuvEwwYkzu',
+    placeholder: 'Some comments?',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'en' || 'zh-cn',
+    path: location.pathname
+  });
+}, window.Valine);
+</script>
 
 </body>
 </html>
