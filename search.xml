@@ -1,16 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hexo Installation and Configuration (with NexT theme)]]></title>
-    <url>%2F2019%2F08%2F13%2Fhexo_helper%2F</url>
-    <content type="text"><![CDATA[Installation Process Install hexo （node and git need to be installed previously） npm install -g hexo-cli Create local blog folder hexo init myBlogcd myBlognpm install Install hexo developer git npm install hexo-deployer-git --save Start local server hexo s Github push configuration (there is space between key and value, BE CAREFUL) 1234deploy: type: git repo: https://github.com/&#123;yourname&#125;/&#123;yourname&#125;.github.io.git branch: master hexo clean Push to github hexo g -d hexo new &quot;My New Post&quot; ConfigurationImage UploaderPrepare an online image uploader like Picgo, and follow the instructions Jupyter Code Block SupportEmbed Local File npm install hexo-jupyter-notebook –save` brew install pandoc pip install nbconvert Update _config.yml in hexo folder –&gt; post_asset_folder: true Create new folder named jupyter under folder _post to save the ipynb code blocks mkdir jupyter-demo Add the following code to your target md file $("#ipynb").load(function() {console.log($("#ipynb").contents().find("body").find("#notebook")); document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook").height()+100;}) If you want to change the height and width of the iframe, please go to node_module of hexo, and find main.py in hexo-jupyter-notebook , change the relative configuration. 123&lt;iframe id='ipynb' marginheight="0" frameborder="0" width='924px' height='680px' srcdoc="%s" style="scrolling:yes;"&gt;&lt;/iframe&gt; Embed Online File Go to https://nbviewer.jupyter.org/ and paste the link of online jupyter notebook, like https://github.com/kinglin/YTClip/blob/cliptrial/02_Code/01_Scripts/FrameSampling.ipynb Use the following code block and input the generated URL by nbviewer: https://nbviewer.jupyter.org/github/kinglin/YTClip/blob/master/02_Code/01_Scripts/rename_addprefix.ipynb 1&lt;iframe src=&quot;your_URL&quot; width=&quot;700&quot; height=&quot;500&quot;&gt;&lt;/iframe&gt; Change Theme Themes repository Go to the root folder of your blog git clone https://github.com/theme-next/hexo-theme-next themes/next Update _config.yml in hexo folder –&gt; theme: next Add Space between Chinese character and English words Automatelynpm install hexo-filter-auto-spacing --save Then you can find the denpendency in package.json :&quot;hexo-filter-auto-spacing&quot;: &quot;^0.2.1&quot; Add Search Featurenpm install hexo-generator-searchdb --save Update _config.yml in hexo folder 12345search: path: search.xml field: post format: html limit: 10000 Update _config.yml in NexT folder 12local_search: enable: true Attach Custom Domain Buy one at aliyun.com or godaddy.com or any websites that provide the services. Take aliyun.com as example, we need to resolve the domain and add 2 records. Go to your github page settings and attach the customized domain. Go to hexo source folder and add a new file named CNAME, fill in the domain. (To avoid being wiped out when submit changes to github) Add Feedback (Valine) Update _config.yml in theme next –&gt; enable valine Login or register on LeanCloud, then replace the appid and appkey to _config.yml Add Word Count &amp; Estimate Reading Time npm install hexo-symbols-count-time --save Add following code block to hexo _config.yml 1234symbols: true time: true total_symbols: true total_time: true Enable field symbols_count_time in NexT _config.yml Add Google Analytics Register on Google Analytics Apply a new account for your website and you will get an tracking_id like UA-14xxxx949-1 Update NexT _config.yml 123google_analytics: tracking_id: UA-14xxxx949-1 localhost_ignored: true Block TestingCode Block1print("helloworld") This is the explaination of the code block. Test Image Upload Test Jupyter Code Block $("#ipynb").load(function() {console.log($("#ipynb").contents().find("body").find("#notebook")); document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook").height()+100;}) Test Video Embedded Test FormulaThis doesn’t work $$\frac{1}{1+\frac{1}{2}}$$ (TODO) Transform formula to image on https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn Referencehttps://segmentfault.com/a/1190000017986794 http://huanyouchen.github.io/2018/05/30/hexo-support-jupyter-notebook-in-blog/ https://hexo.io/zh-cn/docs/ https://github.com/Molunerfinn/PicGo https://www.jianshu.com/p/191d1e21f7ed https://fontawesome.com/v4.7.0/icons/ https://valine.js.org/hexo.html#hexo-theme-raytaylorism]]></content>
+    <title><![CDATA[Build Personal Blog -- Bring your blog to the world (SEO)]]></title>
+    <url>%2F2019%2F08%2F19%2Fhexo-seo%2F</url>
+    <content type="text"><![CDATA[Add Google Analytics Register on Google Analytics Apply a new account for your website and you will get an tracking_id like UA-14xxxx949-1 Update NexT _config.yml 123google_analytics: tracking_id: UA-14xxxx949-1 localhost_ignored: true Add SEO RelatedAdd Sitemap npm install hexo-generator-sitemap --save Add following config in hexo _config.yml: 12sitemap: path: sitemap.xml change URL to your own domain Add robot.txt Create a new file named robot.txt under the folder hexo source, and fill in the following text. 12345678910111213User-agent: *Allow: /Allow: /archives/Disallow: /vendors/Disallow: /js/Disallow: /css/Disallow: /fonts/Disallow: /vendors/Disallow: /fancybox/Sitemap: https://pojian.xyz/sitemap.xmlSitemap: https://pojian.xyz/baidusitemap.xml hexo clean hexo g -d Add sitemap to Google Search Console]]></content>
       <categories>
         <category>Other Learning</category>
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>tech</tag>
         <tag>hexo</tag>
+        <tag>SEO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Build Personal Blog -- Integrate Feedback (Valine) with Hexo (NexT)]]></title>
+    <url>%2F2019%2F08%2F19%2Fhexo-feedback%2F</url>
+    <content type="text"><![CDATA[Add Feedback (Valine) Update _config.yml in theme next –&gt; enable valine Login or register on LeanCloud, then replace the appid and appkey to _config.yml Now you can find the comment block under each article.]]></content>
+      <categories>
+        <category>Other Learning</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Build Personal Blog -- Bind Custom Domain]]></title>
+    <url>%2F2019%2F08%2F19%2Fhexo-domain%2F</url>
+    <content type="text"><![CDATA[Attach Custom Domain Buy one at aliyun.com or godaddy.com or any websites that provide the services. Take aliyun.com as example, we need to resolve the domain and add 2 records. Go to your github page settings and attach the customized domain. Go to hexo source folder and add a new file named CNAME, fill in the domain. (To avoid being wiped out when submit changes to github)]]></content>
+      <categories>
+        <category>Other Learning</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Build Personal Blog -- Integrate Hexo with Jupyter Notebook]]></title>
+    <url>%2F2019%2F08%2F19%2Fhexo-jupyter%2F</url>
+    <content type="text"><![CDATA[Embed Local File npm install hexo-jupyter-notebook –save` brew install pandoc pip install nbconvert Update _config.yml in hexo folder –&gt; post_asset_folder: true Create new folder named jupyter under folder _post to save the ipynb code blocks mkdir jupyter-demo Add the following code to your target md file &lt;script src=&quot;http://code.jquery.com/jquery-2.0.0.js&quot;&gt;&lt;/script&gt; $("#ipynb").load(function() {console.log($("#ipynb").contents().find("body").find("#notebook")); document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook").height()+100;}) If you want to change the height and width of the iframe, please go to node_module of hexo, and find main.py in hexo-jupyter-notebook , change the relative configuration. 123&lt;iframe id='ipynb' marginheight="0" frameborder="0" width='924px' height='680px' srcdoc="%s" style="scrolling:yes;"&gt;&lt;/iframe&gt; Embed Online File Go to https://nbviewer.jupyter.org/ and paste the link of online jupyter notebook, like https://github.com/kinglin/YTClip/blob/cliptrial/02_Code/01_Scripts/FrameSampling.ipynb Use the following code block and input the generated URL by nbviewer: https://nbviewer.jupyter.org/github/kinglin/YTClip/blob/master/02_Code/01_Scripts/rename_addprefix.ipynb 1&lt;iframe src=&quot;your_URL&quot; width=&quot;700&quot; height=&quot;500&quot;&gt;&lt;/iframe&gt;]]></content>
+      <categories>
+        <category>Other Learning</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>jupyter</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Build Personal Blog -- Hexo (NexT) Basic Configuration]]></title>
+    <url>%2F2019%2F08%2F19%2Fhexo-basic-configuration%2F</url>
+    <content type="text"><![CDATA[Image UploaderEmbedding images into our articals is the most common and efficient way to make our thoughts express clearly, but it really takes efforts if we upload each image by ourselves. That’s why we need an image uploader to help up deal with the messy work. Since we already have a Github account, we would like to choose a tool that could make Github as the image repository. There are a lot of tools could handle this, and I will take PicGo as an example. Download PicGo at here Create a new repository at Github to store your images. Go to Github settings -&gt; Developer settings and generate a personal access token Copy the token (only display once) and fill into the PicGo settings You’ve done already. When you drag the image to the PicGo icon, it will upload to your Girhub repository and copy the reference link at the sametime, which you could paste into markdown file directly. Change Theme Go to Themes repository to choose your favorite theme. I will take NexT as example. Go to the root folder of your blog git clone https://github.com/theme-next/hexo-theme-next themes/next Update _config.yml in hexo folder –&gt; theme: next hexo clean hexo s Go to localhost:4000 to see the new apperance. Add Space between Chinese character and English words AutomatelyWhen we are writing in Chinese or other languages, the mixure of different characters will bring the audience the messy expression, so that we always add one space on both sides of English words mannully. This method is going to make the process automately. Excute the command npm install hexo-filter-auto-spacing --save Then you can find the denpendency in package.json :&quot;hexo-filter-auto-spacing&quot;: &quot;^0.2.1&quot; ###Add Search Feature When you have over 50 articles, the Search function will be essencial for you to provide a good reading experience. npm install hexo-generator-searchdb --save Update _config.yml in hexo folder 12345search: path: search.xml field: post format: html limit: 10000 Update _config.yml in NexT folder 12local_search: enable: true hexo clean hexo g -d Add Word Count &amp; Estimate Reading Time npm install hexo-symbols-count-time --save Add following code block to hexo _config.yml 1234symbols: true time: true total_symbols: true total_time: true Enable field symbols_count_time in NexT _config.yml ##]]></content>
+      <categories>
+        <category>Other Learning</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Build Personal Blog -- Github Page + Hexo Installation]]></title>
+    <url>%2F2019%2F08%2F19%2Fhexo-installation%2F</url>
+    <content type="text"><![CDATA[Installation Process （MacOS） Create a new repository on Github named {yourname}.github.io. The {yourname} must be the same as your Github username. Install hexo （node and git need to be installed previously） npm install -g hexo-cli Create local blog folder hexo init myBlogcd myBlognpm install Install hexo developer git npm install hexo-deployer-git --save Create new blog hexo new &quot;My New Post&quot; Start local server hexo s So far you can open the browser and go to localhost:4000, then you will see the Hello World page Add github push configuration to hexo _config.yml (there is space between key and value, BE CAREFUL) 1234deploy: type: git repo: https://github.com/&#123;yourname&#125;/&#123;yourname&#125;.github.io.git branch: master Clean the public folder to avoid cache hexo clean Push to github (g stands for generate the needed files in public folder) hexo g -d Go to {yourname}.github.io and you will see the succeful online page]]></content>
+      <categories>
+        <category>Other Learning</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>tech</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo (NexT) Installation and Configuration (The Most Complete)]]></title>
+    <url>%2F2019%2F08%2F13%2Fhexo-helper%2F</url>
+    <content type="text"><![CDATA[Installation Process（MacOS） Create a new repository on Github named {yourname}.github.io. The {yourname} must be the same as your Github username. Install hexo （node and git need to be installed previously） npm install -g hexo-cli Create local blog folder hexo init myBlogcd myBlognpm install Install hexo developer git npm install hexo-deployer-git --save Create new blog hexo new &quot;My New Post&quot; Start local server hexo s So far you can open the browser and go to localhost:4000, then you will see the Hello World page Add github push configuration to hexo _config.yml (there is space between key and value, BE CAREFUL) 1234deploy: type: git repo: https://github.com/&#123;yourname&#125;/&#123;yourname&#125;.github.io.git branch: master Clean the public folder to avoid cache hexo clean Push to github (g stands for generate the needed files in public folder) hexo g -d Go to {yourname}.github.io and you will see the succeful online page ConfigurationImage UploaderPrepare an online image uploader like Picgo, and follow the instructions Jupyter Code Block SupportEmbed Local File npm install hexo-jupyter-notebook –save` brew install pandoc pip install nbconvert Update _config.yml in hexo folder –&gt; post_asset_folder: true Create new folder named jupyter under folder _post to save the ipynb code blocks mkdir jupyter-demo Add the following code to your target md file $("#ipynb").load(function() {console.log($("#ipynb").contents().find("body").find("#notebook")); document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook").height()+100;}) If you want to change the height and width of the iframe, please go to node_module of hexo, and find main.py in hexo-jupyter-notebook , change the relative configuration. 123&lt;iframe id='ipynb' marginheight="0" frameborder="0" width='924px' height='680px' srcdoc="%s" style="scrolling:yes;"&gt;&lt;/iframe&gt; Embed Online File Go to https://nbviewer.jupyter.org/ and paste the link of online jupyter notebook, like https://github.com/kinglin/YTClip/blob/cliptrial/02_Code/01_Scripts/FrameSampling.ipynb Use the following code block and input the generated URL by nbviewer: https://nbviewer.jupyter.org/github/kinglin/YTClip/blob/master/02_Code/01_Scripts/rename_addprefix.ipynb 1&lt;iframe src=&quot;your_URL&quot; width=&quot;700&quot; height=&quot;500&quot;&gt;&lt;/iframe&gt; ## Change Theme Themes repository Go to the root folder of your blog git clone https://github.com/theme-next/hexo-theme-next themes/next Update _config.yml in hexo folder –&gt; theme: next Add Space between Chinese character and English words Automatelynpm install hexo-filter-auto-spacing --save Then you can find the denpendency in package.json :&quot;hexo-filter-auto-spacing&quot;: &quot;^0.2.1&quot; Add Search Featurenpm install hexo-generator-searchdb --save Update _config.yml in hexo folder 12345search: path: search.xml field: post format: html limit: 10000 Update _config.yml in NexT folder 12local_search: enable: true Attach Custom Domain Buy one at aliyun.com or godaddy.com or any websites that provide the services. Take aliyun.com as example, we need to resolve the domain and add 2 records. Go to your github page settings and attach the customized domain. Go to hexo source folder and add a new file named CNAME, fill in the domain. (To avoid being wiped out when submit changes to github) Add Feedback (Valine) Update _config.yml in theme next –&gt; enable valine Login or register on LeanCloud, then replace the appid and appkey to _config.yml Add Word Count &amp; Estimate Reading Time npm install hexo-symbols-count-time --save Add following code block to hexo _config.yml 1234symbols: true time: true total_symbols: true total_time: true Enable field symbols_count_time in NexT _config.yml Add Google Analytics Register on Google Analytics Apply a new account for your website and you will get an tracking_id like UA-14xxxx949-1 Update NexT _config.yml 123google_analytics: tracking_id: UA-14xxxx949-1 localhost_ignored: true Add SEO RelatedAdd Sitemap npm install hexo-generator-sitemap --save Add following config in hexo _config.yml: 12sitemap: path: sitemap.xml change URL to your own domain Add robot.txt Create a new file named robot.txt under the folder hexo source, and fill in the following text. 12345678910111213User-agent: *Allow: /Allow: /archives/Disallow: /vendors/Disallow: /js/Disallow: /css/Disallow: /fonts/Disallow: /vendors/Disallow: /fancybox/Sitemap: https://pojian.xyz/sitemap.xmlSitemap: https://pojian.xyz/baidusitemap.xml hexo clean hexo g -d Add sitemap to Google Search Console Block TestingCode Block1print("helloworld") This is the explaination of the code block. Test Image Upload Test Jupyter Code Block $("#ipynb").load(function() {console.log($("#ipynb").contents().find("body").find("#notebook")); document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook").height()+100;}) Test Video Embedded ## Test Formula This doesn’t work $$\frac{1}{1+\frac{1}{2}}$$ (TODO) Transform formula to image on https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn Referencehttps://segmentfault.com/a/1190000017986794 http://huanyouchen.github.io/2018/05/30/hexo-support-jupyter-notebook-in-blog/ https://hexo.io/zh-cn/docs/ https://github.com/Molunerfinn/PicGo https://www.jianshu.com/p/191d1e21f7ed https://fontawesome.com/v4.7.0/icons/ https://valine.js.org/hexo.html#hexo-theme-raytaylorism https://www.iconfont.cn/ https://blog.csdn.net/weixin_43971764/article/details/96754325 https://juejin.im/post/5c38b63f6fb9a04a0a5f68b3]]></content>
+      <categories>
+        <category>Other Learning</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>tech</tag>
         <tag>markdown</tag>
       </tags>
   </entry>

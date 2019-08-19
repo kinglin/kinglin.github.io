@@ -2,9 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://leisurelyfool.com/2019/08/13/hexo_helper/</loc>
+    <loc>https://leisurelyfool.com/2019/08/13/hexo-helper/</loc>
     
-    <lastmod>2019-08-18T16:20:46.402Z</lastmod>
+    <lastmod>2019-08-19T07:24:39.246Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leisurelyfool.com/2019/08/19/hexo-basic-configuration/</loc>
+    
+    <lastmod>2019-08-19T07:24:13.353Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leisurelyfool.com/2019/08/19/hexo-domain/</loc>
+    
+    <lastmod>2019-08-19T07:23:26.825Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leisurelyfool.com/2019/08/19/hexo-feedback/</loc>
+    
+    <lastmod>2019-08-19T07:23:19.932Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leisurelyfool.com/2019/08/19/hexo-installation/</loc>
+    
+    <lastmod>2019-08-19T07:23:11.023Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leisurelyfool.com/2019/08/19/hexo-jupyter/</loc>
+    
+    <lastmod>2019-08-19T07:23:01.616Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leisurelyfool.com/2019/08/19/hexo-seo/</loc>
+    
+    <lastmod>2019-08-19T07:20:33.374Z</lastmod>
     
   </url>
   
