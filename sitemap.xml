@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://leisurelyfool.com/posts/hexo-seo.html</loc>
+    
+    <lastmod>2019-08-19T09:31:39.974Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leisurelyfool.com/posts/hexo-jupyter.html</loc>
+    
+    <lastmod>2019-08-19T09:31:39.972Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leisurelyfool.com/posts/hexo-helper.html</loc>
+    
+    <lastmod>2019-08-19T09:31:39.971Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leisurelyfool.com/posts/hexo-feedback.html</loc>
+    
+    <lastmod>2019-08-19T09:31:39.970Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leisurelyfool.com/posts/hexo-domain.html</loc>
+    
+    <lastmod>2019-08-19T09:31:39.969Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leisurelyfool.com/posts/hexo-basic-configuration.html</loc>
+    
+    <lastmod>2019-08-19T09:31:39.967Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://leisurelyfool.com/posts/hexo-installation.html</loc>
     
     <lastmod>2019-08-19T09:31:08.618Z</lastmod>
@@ -12,48 +54,6 @@
     <loc>https://leisurelyfool.com/about/index.html</loc>
     
     <lastmod>2019-08-19T07:40:58.217Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://leisurelyfool.com/posts/hexo-seo.html</loc>
-    
-    <lastmod>2019-08-19T07:27:16.847Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://leisurelyfool.com/posts/hexo-helper.html</loc>
-    
-    <lastmod>2019-08-19T07:26:53.423Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://leisurelyfool.com/posts/hexo-basic-configuration.html</loc>
-    
-    <lastmod>2019-08-19T07:24:13.353Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://leisurelyfool.com/posts/hexo-domain.html</loc>
-    
-    <lastmod>2019-08-19T07:23:26.825Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://leisurelyfool.com/posts/hexo-feedback.html</loc>
-    
-    <lastmod>2019-08-19T07:23:19.932Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://leisurelyfool.com/posts/hexo-jupyter.html</loc>
-    
-    <lastmod>2019-08-19T07:23:01.616Z</lastmod>
     
   </url>
   
