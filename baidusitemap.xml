@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://leisurelyfool.com/2019/08/19/hexo-seo/</loc>
+    <loc>https://leisurelyfool.com/posts/hexo-installation.html</loc>
     <lastmod>2019-08-19</lastmod>
   </url>  <url>
-    <loc>https://leisurelyfool.com/2019/08/19/hexo-installation/</loc>
+    <loc>https://leisurelyfool.com/posts/hexo-seo.html</loc>
     <lastmod>2019-08-19</lastmod>
   </url>  <url>
-    <loc>https://leisurelyfool.com/2019/08/13/hexo-helper/</loc>
+    <loc>https://leisurelyfool.com/posts/hexo-helper.html</loc>
     <lastmod>2019-08-19</lastmod>
   </url>  <url>
-    <loc>https://leisurelyfool.com/2019/08/19/hexo-basic-configuration/</loc>
+    <loc>https://leisurelyfool.com/posts/hexo-basic-configuration.html</loc>
     <lastmod>2019-08-19</lastmod>
   </url>  <url>
-    <loc>https://leisurelyfool.com/2019/08/19/hexo-domain/</loc>
+    <loc>https://leisurelyfool.com/posts/hexo-domain.html</loc>
     <lastmod>2019-08-19</lastmod>
   </url>  <url>
-    <loc>https://leisurelyfool.com/2019/08/19/hexo-feedback/</loc>
+    <loc>https://leisurelyfool.com/posts/hexo-feedback.html</loc>
     <lastmod>2019-08-19</lastmod>
   </url>  <url>
-    <loc>https://leisurelyfool.com/2019/08/19/hexo-jupyter/</loc>
+    <loc>https://leisurelyfool.com/posts/hexo-jupyter.html</loc>
     <lastmod>2019-08-19</lastmod>
   </url>
 </urlset>
