@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://leisurelyfool.com/"/>
-  <updated>2019-08-20T12:48:32.671Z</updated>
+  <updated>2019-08-20T15:19:29.572Z</updated>
   <id>https://leisurelyfool.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Online Image Resources Without Copyright</title>
+    <link href="https://leisurelyfool.com/posts/6c62bb3a.html"/>
+    <id>https://leisurelyfool.com/posts/6c62bb3a.html</id>
+    <published>2019-08-20T15:10:21.000Z</published>
+    <updated>2019-08-20T15:19:29.572Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li><p><a href="https://unsplash.com" target="_blank">Unsplash</a></p><p><img src="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190820231811.png" alt></p><a id="more"></a></li><li><p><a href="https://www.pexels.com/" target="_blank">Pexels</a></p><p><img src="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190820231504.png" alt></p></li><li><p><a href="http://streetwill.co/" target="_blank">StreetWill</a></p><p><img src="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190820231729.png" alt></p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://unsplash.com&quot; target=&quot;_blank&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/kinglin/repo4pic/master/20190820231811.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="References &amp; Reources" scheme="https://leisurelyfool.com/categories/References-Reources/"/>
+    
+      <category term="Image Websites" scheme="https://leisurelyfool.com/categories/References-Reources/Image-Websites/"/>
+    
+    
+      <category term="resources" scheme="https://leisurelyfool.com/tags/resources/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Build Your Second Github Page -- Project Page</title>
     <link href="https://leisurelyfool.com/posts/2d90b43b.html"/>
     <id>https://leisurelyfool.com/posts/2d90b43b.html</id>
     <published>2019-08-20T05:13:30.000Z</published>
-    <updated>2019-08-20T12:48:32.671Z</updated>
+    <updated>2019-08-20T15:08:03.937Z</updated>
     
     <content type="html"><![CDATA[<p>Once we have build our blog page on Github, the only reserved domain <code>{yourname}.github.io</code> has been allocated to your accountm so that we cannot bind any other domain to it. But what if we want to build our second blog or setup another page for different purpose of use? Here we are – Github Project Page.</p><p>The process is just the same as building the personal blog. Let’s find it out.</p><a id="more"></a><h3 id="Initialize-Blog-and-Bind-Github-Pages"><a href="#Initialize-Blog-and-Bind-Github-Pages" class="headerlink" title="Initialize Blog and Bind Github Pages"></a>Initialize Blog and Bind Github Pages</h3><ol><li><p>Create a repository on Github, and you can name it whatever you like.</p></li><li><p>Create a new branch named <code>gh-pages</code> </p><p><img src="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190820202520.png" alt></p></li><li><p>Initiate the blog files on your computer (refer to <a href="https://leisurelyfool.com/posts/11353.html" target="_blank">my previous blog</a>). Please pay attention, the Github configuration should be change to the branch.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/&#123;yourname&#125;/&#123;reponame&#125;.git</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure></li><li><p>Update URL configuration in <code>_config.yml</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url: http://&#123;yourname&#125;.github.io/reponame</span><br><span class="line">root: /reponame/</span><br></pre></td></tr></table></figure></li><li><p><code>hexo clean</code></p></li><li><p><code>hexo g -d</code></p></li><li><p>Done! You can go to <code>{yourname}.github.io/{reponame}</code> to check your website.</p></li></ol><h3 id="Bind-Custom-Domain"><a href="#Bind-Custom-Domain" class="headerlink" title="Bind Custom Domain"></a>Bind Custom Domain</h3><ol><li><p>Go to hexo <code>source</code> folder and add a new file named <code>CNAME</code>, fill in the domain. (To avoid being wiped out when submit changes to github)</p><p><img src="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818224328.png" alt></p></li><li><p>Go to <em>aliyun.com</em> (where you bought domain) and add a new settings for resoving. The record value should be the same as <code>{yourname}.github.io</code></p><p><img src="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818223659.png" alt></p></li></ol>]]></content>
     
@@ -48,16 +74,15 @@
     <link href="https://leisurelyfool.com/posts/35228.html"/>
     <id>https://leisurelyfool.com/posts/35228.html</id>
     <published>2019-08-19T16:02:28.000Z</published>
-    <updated>2019-08-20T01:56:33.771Z</updated>
+    <updated>2019-08-20T15:11:00.209Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="2019-08-20"><a href="#2019-08-20" class="headerlink" title="2019.08.20"></a>2019.08.20</h3><p> 想了很久，还是决定让这个版块保留中文，一来是让自己的表述更直白，更清晰，二来也希望在英文环境里，不要忘了母语的精髓与美丽（先立个 flag：每周碎碎念不少于两次，不限长短，但求清晰表达）。本科毕业后工作两年半，又读书一年半，在即将踏入新工作的前一周，我开始了博客生涯。这是个好的节点。</p><p> 身处信息爆炸时代的我经历着漫天的输入，也应尝试有效的输出，让知识以内化，也让随着信息变得碎片化的思维重新结构化。</p><p> 研究生的日子，痛并快乐着。很多项目与知识都因缺乏记录而淡忘，希望能随着时间的推进，整理曾经的项目，做到复盘，也整理相关知识点与素材，方便日后查阅。新工作会有新挑战。异国他乡，难度还是有的。语言，文化，工作环境，技术背景等等都与国内有不小的差异，免不了会经历磨合的阵痛。有挑战就会有进步，也希望在记录下点滴，给自己一面镜子。</p><p> 记录是一件喜悦的事，但拖延会像毒药埋没这份喜悦，侵蚀着心智。希望能借博客给自己以信心吧。</p><p> 时间在走，浪潮依旧，不求屹立于巅，但求不畏涌流。</p>]]></content>
+    <content type="html"><![CDATA[<div align="center"> <img src="https://raw.githubusercontent.com/kinglin/repo4pic/master/leio-mclaren-leiomclaren-S4W2AU0t3lw-unsplash.jpg" width="50%" height="50%"></div><a id="more"></a><h3 id="2019-08-20"><a href="#2019-08-20" class="headerlink" title="2019.08.20"></a>2019.08.20</h3><p> 想了很久，还是决定让这个版块保留中文，一来是让自己的表述更直白，更清晰，二来也希望在英文环境里，不要忘了母语的精髓与美丽（先立个 flag：每周碎碎念不少于两次，不限长短，但求清晰表达）。本科毕业后工作两年半，又读书一年半，在即将踏入新工作的前一周，我开始了博客生涯。这是个好的节点。</p><p> 身处信息爆炸时代的我经历着漫天的输入，也应尝试有效的输出，让知识以内化，也让随着信息变得碎片化的思维重新结构化。</p><p> 研究生的日子，痛并快乐着。很多项目与知识都因缺乏记录而淡忘，希望能随着时间的推进，整理曾经的项目，做到复盘，也整理相关知识点与素材，方便日后查阅。新工作会有新挑战。异国他乡，难度还是有的。语言，文化，工作环境，技术背景等等都与国内有不小的差异，免不了会经历磨合的阵痛。有挑战就会有进步，也希望在记录下点滴，给自己一面镜子。</p><p> 记录是一件喜悦的事，但拖延会像毒药埋没这份喜悦，侵蚀着心智。希望能借博客给自己以信心吧。</p><p> 时间在走，浪潮依旧，不求屹立于巅，但求不畏涌流。</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h3 id=&quot;2019-08-20&quot;&gt;&lt;a href=&quot;#2019-08-20&quot; class=&quot;headerlink&quot; title=&quot;2019.08.20&quot;&gt;&lt;/a&gt;2019.08.20&lt;/h3&gt;&lt;p&gt; 想了很久，还是决定让这个版块保留中文，一来是让自己的表述更直白，更清晰，二
-      
+      &lt;div align=&quot;center&quot;&gt; 
+&lt;img src=&quot;https://raw.githubusercontent.com/kinglin/repo4pic/master/leio-mclaren-leiomclaren-S4W2AU0t3lw-unsplash.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot;&gt;
+&lt;/div&gt;
     
     </summary>
     
@@ -71,7 +96,7 @@
     <link href="https://leisurelyfool.com/posts/35959.html"/>
     <id>https://leisurelyfool.com/posts/35959.html</id>
     <published>2019-08-19T07:12:17.000Z</published>
-    <updated>2019-08-19T16:05:49.692Z</updated>
+    <updated>2019-08-20T15:08:23.785Z</updated>
     
     <content type="html"><![CDATA[<h3 id="Add-Google-Analytics"><a href="#Add-Google-Analytics" class="headerlink" title="Add Google Analytics"></a>Add Google Analytics</h3><ol><li><p>Register on <a href="https://analytics.google.com" target="_blank">Google Analytics</a></p></li><li><p>Apply a new account for your website and you will get an <code>tracking_id</code> like <code>UA-14xxxx949-1</code></p></li><li><p>Update NexT  <code>_config.yml</code></p><a id="more"></a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">google_analytics:</span><br><span class="line">  tracking_id: UA-14xxxx949-1 </span><br><span class="line">  localhost_ignored: true</span><br></pre></td></tr></table></figure></li></ol><h3 id="Add-SEO-Related"><a href="#Add-SEO-Related" class="headerlink" title="Add SEO Related"></a>Add SEO Related</h3><h4 id="Add-Sitemap"><a href="#Add-Sitemap" class="headerlink" title="Add Sitemap"></a>Add Sitemap</h4><ol><li><p><code>npm install hexo-generator-sitemap --save</code></p></li><li><p>Add following config in hexo <code>_config.yml</code>:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sitemap:  </span><br><span class="line">  path: sitemap.xml</span><br></pre></td></tr></table></figure></li><li><p>change URL to your own domain</p></li></ol><h4 id="Add-robot-txt"><a href="#Add-robot-txt" class="headerlink" title="Add robot.txt"></a>Add robot.txt</h4><ol><li><p>Create a new file named <code>robot.txt</code> under the folder hexo <code>source</code>, and fill in the following text.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">User-agent: *</span><br><span class="line">Allow: /</span><br><span class="line">Allow: /archives/</span><br><span class="line"></span><br><span class="line">Disallow: /vendors/</span><br><span class="line">Disallow: /js/</span><br><span class="line">Disallow: /css/</span><br><span class="line">Disallow: /fonts/</span><br><span class="line">Disallow: /vendors/</span><br><span class="line">Disallow: /fancybox/</span><br><span class="line"></span><br><span class="line">Sitemap: https://pojian.xyz/sitemap.xml</span><br><span class="line">Sitemap: https://pojian.xyz/baidusitemap.xml</span><br></pre></td></tr></table></figure></li><li><p><code>hexo clean</code></p></li><li><p><code>hexo g -d</code></p></li><li><p>Add sitemap to <a href="https://www.google.com/webmasters/" target="_blank">Google Search Console</a></p></li></ol>]]></content>
     
