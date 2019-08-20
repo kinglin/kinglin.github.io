@@ -57,7 +57,7 @@
 </script>
 
   <meta name="description" content="Installation Process（MacOS） Create a new repository on Github named {yourname}.github.io. The {yourname} must be the same as your Github username.  Install hexo （node and git need to be installed prev">
-<meta name="keywords" content="hexo,markdown">
+<meta name="keywords" content="hexo,Github,markdown">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo (NexT) Installation and Configuration (The Most Complete)">
 <meta property="og:url" content="https://leisurelyfool.com/posts/19796.html">
@@ -70,7 +70,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818230209.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818122551.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/CodeCogsEqn.png">
-<meta property="og:updated_time" content="2019-08-19T16:05:39.840Z">
+<meta property="og:updated_time" content="2019-08-20T05:17:23.812Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo (NexT) Installation and Configuration (The Most Complete)">
 <meta name="twitter:description" content="Installation Process（MacOS） Create a new repository on Github named {yourname}.github.io. The {yourname} must be the same as your Github username.  Install hexo （node and git need to be installed prev">
@@ -192,7 +192,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">4</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">5</span></a>
 
   </li>
       
@@ -218,7 +218,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">8</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">9</span></a>
 
   </li>
       
@@ -325,7 +325,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-08-20 00:05:39" itemprop="dateModified" datetime="2019-08-20T00:05:39+08:00">2019-08-20</time>
+                <time title="Modified: 2019-08-20 13:17:23" itemprop="dateModified" datetime="2019-08-20T13:17:23+08:00">2019-08-20</time>
               </span>
             
           
@@ -8925,6 +8925,16 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 <p><img src="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818230209.png" alt></p>
 </li>
 </ol>
+<h2 id="Change-URI-to-Permanent-Link"><a href="#Change-URI-to-Permanent-Link" class="headerlink" title="Change URI to Permanent Link"></a>Change URI to Permanent Link</h2><p>As we know, the original link of our posts is composited by <em>year, month, day and title</em>, but this location is not friendly enough to SEO, so that we need to change it to the permanent way.</p>
+<ol>
+<li><p><code>npm install hexo-abbrlink --save</code></p>
+</li>
+<li><p>Update hexo <code>_config.yml</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">permalink: posts/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: hex    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Restart hexo and we will find the link of our post will be like <code>localhost:4000/posts/12345.html</code></p>
+</li>
+</ol>
 <h2 id="Add-Google-Analytics"><a href="#Add-Google-Analytics" class="headerlink" title="Add Google Analytics"></a>Add Google Analytics</h2><ol>
 <li><p>Register on <a href="https://analytics.google.com" target="_blank">Google Analytics</a></p>
 </li>
@@ -17418,6 +17428,8 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
             
               <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
             
+              <a href="/tags/Github/" rel="tag"><i class="fa fa-tag"></i> Github</a>
+            
               <a href="/tags/markdown/" rel="tag"><i class="fa fa-tag"></i> markdown</a>
             
           </div>
@@ -17521,7 +17533,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -17565,7 +17577,9 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
         
           
         
-        <span class="site-state-item-count">4</span>
+          
+        
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">tags</span>
         </a>
       </div>
@@ -17611,7 +17625,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Installation-Process（MacOS）"><span class="nav-number">1.</span> <span class="nav-text">Installation Process（MacOS）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Configuration"><span class="nav-number">2.</span> <span class="nav-text">Configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Image-Uploader"><span class="nav-number">2.1.</span> <span class="nav-text">Image Uploader</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jupyter-Code-Block-Support"><span class="nav-number">2.2.</span> <span class="nav-text">Jupyter Code Block Support</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Local-File"><span class="nav-number">2.2.1.</span> <span class="nav-text">Embed Local File</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Online-File"><span class="nav-number">2.2.2.</span> <span class="nav-text">Embed Online File</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Space-between-Chinese-character-and-English-words-Automately"><span class="nav-number">2.3.</span> <span class="nav-text">Add Space between Chinese character and English words Automately</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Search-Feature"><span class="nav-number">2.4.</span> <span class="nav-text">Add Search Feature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Attach-Custom-Domain"><span class="nav-number">2.5.</span> <span class="nav-text">Attach Custom Domain</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Feedback-Valine"><span class="nav-number">2.6.</span> <span class="nav-text">Add Feedback (Valine)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Word-Count-amp-Estimate-Reading-Time"><span class="nav-number">2.7.</span> <span class="nav-text">Add Word Count &amp; Estimate Reading Time</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Google-Analytics"><span class="nav-number">2.8.</span> <span class="nav-text">Add Google Analytics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-SEO-Related"><span class="nav-number">2.9.</span> <span class="nav-text">Add SEO Related</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Add-Sitemap"><span class="nav-number">2.9.1.</span> <span class="nav-text">Add Sitemap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Add-robot-txt"><span class="nav-number">2.9.2.</span> <span class="nav-text">Add robot.txt</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Block-Testing"><span class="nav-number">3.</span> <span class="nav-text">Block Testing</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Code-Block"><span class="nav-number">3.1.</span> <span class="nav-text">Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Image-Upload"><span class="nav-number">3.2.</span> <span class="nav-text">Test Image Upload</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Jupyter-Code-Block"><span class="nav-number">3.3.</span> <span class="nav-text">Test Jupyter Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Video-Embedded"><span class="nav-number">3.4.</span> <span class="nav-text">Test Video Embedded</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Installation-Process（MacOS）"><span class="nav-number">1.</span> <span class="nav-text">Installation Process（MacOS）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Configuration"><span class="nav-number">2.</span> <span class="nav-text">Configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Image-Uploader"><span class="nav-number">2.1.</span> <span class="nav-text">Image Uploader</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jupyter-Code-Block-Support"><span class="nav-number">2.2.</span> <span class="nav-text">Jupyter Code Block Support</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Local-File"><span class="nav-number">2.2.1.</span> <span class="nav-text">Embed Local File</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Embed-Online-File"><span class="nav-number">2.2.2.</span> <span class="nav-text">Embed Online File</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Space-between-Chinese-character-and-English-words-Automately"><span class="nav-number">2.3.</span> <span class="nav-text">Add Space between Chinese character and English words Automately</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Search-Feature"><span class="nav-number">2.4.</span> <span class="nav-text">Add Search Feature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Attach-Custom-Domain"><span class="nav-number">2.5.</span> <span class="nav-text">Attach Custom Domain</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Feedback-Valine"><span class="nav-number">2.6.</span> <span class="nav-text">Add Feedback (Valine)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Word-Count-amp-Estimate-Reading-Time"><span class="nav-number">2.7.</span> <span class="nav-text">Add Word Count &amp; Estimate Reading Time</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Change-URI-to-Permanent-Link"><span class="nav-number">2.8.</span> <span class="nav-text">Change URI to Permanent Link</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-Google-Analytics"><span class="nav-number">2.9.</span> <span class="nav-text">Add Google Analytics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-SEO-Related"><span class="nav-number">2.10.</span> <span class="nav-text">Add SEO Related</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Add-Sitemap"><span class="nav-number">2.10.1.</span> <span class="nav-text">Add Sitemap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Add-robot-txt"><span class="nav-number">2.10.2.</span> <span class="nav-text">Add robot.txt</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Block-Testing"><span class="nav-number">3.</span> <span class="nav-text">Block Testing</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Code-Block"><span class="nav-number">3.1.</span> <span class="nav-text">Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Image-Upload"><span class="nav-number">3.2.</span> <span class="nav-text">Test Image Upload</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Jupyter-Code-Block"><span class="nav-number">3.3.</span> <span class="nav-text">Test Jupyter Code Block</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Video-Embedded"><span class="nav-number">3.4.</span> <span class="nav-text">Test Video Embedded</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
             
 
           </div>
@@ -17638,12 +17652,12 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="Symbols count total">7k</span>
+    <span title="Symbols count total">9k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6 mins.</span>
+    <span title="Reading time total">8 mins.</span>
 </div>
 
         

@@ -68,7 +68,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190819135055.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190819135323.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818230209.png">
-<meta property="og:updated_time" content="2019-08-19T16:05:29.142Z">
+<meta property="og:updated_time" content="2019-08-20T02:07:15.697Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Build Personal Blog -- Hexo (NexT) Basic Configuration">
 <meta name="twitter:description" content="Image UploaderEmbedding images into our articals is the most common and efficient way to make our thoughts express clearly, but it really takes efforts if we upload each image by ourselves. That’s why">
@@ -190,7 +190,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">4</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags<span class="badge">5</span></a>
 
   </li>
       
@@ -216,7 +216,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">8</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives<span class="badge">9</span></a>
 
   </li>
       
@@ -323,7 +323,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-08-20 00:05:29" itemprop="dateModified" datetime="2019-08-20T00:05:29+08:00">2019-08-20</time>
+                <time title="Modified: 2019-08-20 10:07:15" itemprop="dateModified" datetime="2019-08-20T10:07:15+08:00">2019-08-20</time>
               </span>
             
           
@@ -377,7 +377,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
               
-              <span>2.4k</span>
+              <span>2.9k</span>
             </span>
           
             <span class="post-meta-item" title="Reading time">
@@ -385,7 +385,7 @@
                 <i class="fa fa-clock-o"></i>
               </span>
               
-              <span>2 mins.</span>
+              <span>3 mins.</span>
             </span>
           
 
@@ -464,7 +464,16 @@
 <p><img src="https://raw.githubusercontent.com/kinglin/repo4pic/master/20190818230209.png" alt></p>
 </li>
 </ol>
-<p>## </p>
+<h3 id="Change-URI-to-Permanent-Link"><a href="#Change-URI-to-Permanent-Link" class="headerlink" title="Change URI to Permanent Link"></a>Change URI to Permanent Link</h3><p>As we know, the original link of our posts is composited by <em>year, month, day and title</em>, but this location is not friendly enough to SEO, so that we need to change it to the permanent way.</p>
+<ol>
+<li><p><code>npm install hexo-abbrlink --save</code></p>
+</li>
+<li><p>Update hexo <code>_config.yml</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">permalink: posts/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: hex    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Restart hexo and we will find the link of our post will be like <code>localhost:4000/posts/12345.html</code></p>
+</li>
+</ol>
 
     </div>
 
@@ -603,7 +612,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -647,7 +656,9 @@
         
           
         
-        <span class="site-state-item-count">4</span>
+          
+        
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">tags</span>
         </a>
       </div>
@@ -693,7 +704,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Image-Uploader"><span class="nav-number">1.</span> <span class="nav-text">Image Uploader</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Change-Theme"><span class="nav-number">2.</span> <span class="nav-text">Change Theme</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Add-Space-between-Chinese-character-and-English-words-Automately"><span class="nav-number">3.</span> <span class="nav-text">Add Space between Chinese character and English words Automately</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Add-Word-Count-amp-Estimate-Reading-Time"><span class="nav-number">4.</span> <span class="nav-text">Add Word Count &amp; Estimate Reading Time</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Image-Uploader"><span class="nav-number">1.</span> <span class="nav-text">Image Uploader</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Change-Theme"><span class="nav-number">2.</span> <span class="nav-text">Change Theme</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Add-Space-between-Chinese-character-and-English-words-Automately"><span class="nav-number">3.</span> <span class="nav-text">Add Space between Chinese character and English words Automately</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Add-Word-Count-amp-Estimate-Reading-Time"><span class="nav-number">4.</span> <span class="nav-text">Add Word Count &amp; Estimate Reading Time</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Change-URI-to-Permanent-Link"><span class="nav-number">5.</span> <span class="nav-text">Change URI to Permanent Link</span></a></li></ol></div>
             
 
           </div>
@@ -720,12 +731,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="Symbols count total">7k</span>
+    <span title="Symbols count total">9k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6 mins.</span>
+    <span title="Reading time total">8 mins.</span>
 </div>
 
         
